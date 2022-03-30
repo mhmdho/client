@@ -13,7 +13,7 @@ const style = {
     navItemsContainer: `flex bg-[#191B1F] rounded-3xl`,
     navItem: `px-4 py-2 m-1 flex items-center text-lg font-semibold text-[0.9rem] cursor-pointer rounded-3xl`,
     activeNavItem: `bg-[#20242A]`,
-    buttonsContainer: `flex w-1/4 justify-end items-center`,
+    buttonsContainer: `flex justify-end items-center`,
     button: `flex items-center bg-[#191B1F] rounded-2xl mx-2 text-[0.9rem] font-semibold cursor-pointer`,
     buttonPadding: `p-2`,
     buttonTextContainer: `h-8 flex items-center`,
