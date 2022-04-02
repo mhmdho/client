@@ -81,11 +81,11 @@ const Header = () => {
                     </div>
                 </div>
                 
-                {/* {currentAccount ? (
+                {currentAccount ? (
                     <div className={`${style.button} ${style.buttonPadding}`}>
-                        <div className={style.buttonTextContainer}>{userName}</div>
+                        <div className={style.buttonTextContainer}>0x42...7df</div>
                     </div>
-                ) : ( */}
+                ) : (
                     <div
                         onClick={() => connectWallet()}
                         className={`${style.button} ${style.buttonPadding}`}
@@ -94,7 +94,7 @@ const Header = () => {
                             Connect Wallet
                         </div>
                     </div>
-                {/* )} */}
+                )}
                 <div className={`${style.button} ${style.buttonPadding}`}>
                     <div className={`${style.buttonIconContainer} `}>
                         <HiOutlineDotsVertical />
