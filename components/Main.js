@@ -2,6 +2,8 @@ import Image from 'next/image'
 import { RiSettings3Fill } from 'react-icons/ri'
 import { AiOutlineDown } from 'react-icons/ai'
 import ethLogo from '../assets/eth.png'
+import { TransactionContext } from '../context/TransactionContext'
+import { useContext } from 'react'
 
 
 const style = {
@@ -20,6 +22,19 @@ const style = {
 
 
 const Main = () => {
+  const { formData, handleChange, sendTransaction } =
+      useContext(TransactionContext)
+  const router = useRouter()
+
+  const handleSubmit = async (e: any) => {
+    const { addressTo, amount } = formData
+    e.preventDefault()
+
+    if (!addressTo || !amount) return
+
+    sendTransaction()
+  }
+
   return (
     <div className={style.wrapper}>
       <div className={style.content}>
