@@ -26,7 +26,7 @@ const Main = () => {
       useContext(TransactionContext)
   const router = useRouter()
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e) => {
     const { addressTo, amount } = formData
     e.preventDefault()
 
